@@ -73,7 +73,7 @@ def parseFile(path):
     return dataset
 
 
-# parseFile('/Users/zahra_abasiyan/PycharmProjects/NLP/classification/train_test_data/HAM-Train.txt')
+# parseFile('/train_test_data/HAM-Train.txt')
 
 with open('dataset_feature.pickle', 'rb') as file:
     dataset = pickle.load(file)
