@@ -1,6 +1,6 @@
 import pickle
 
-directory = '/Users/zahra_abasiyan/PycharmProjects/NLP/classification/'
+directory = '/path-to-your-directory/'
 
 
 # this function reads the file in given path and creates a dictionary from train data
