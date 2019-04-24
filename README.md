@@ -1,5 +1,5 @@
 # Text-Classification-NBC
-a NBC with absolute discounting smoothing in this project for classifying 'Hamshahri' news dataset.
+a NBC with absolute discounting smoothing for classifying 'Hamshahri' news dataset is implemented.
 
 In this project informative words are extracted from train data by using Information Gain formula.
 two NBC classifiers based on unigram model and Bigram model are implemented. the unigram model has two 
