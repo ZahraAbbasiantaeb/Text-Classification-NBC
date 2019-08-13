@@ -4,5 +4,4 @@ a NBC with absolute discounting smoothing for classifying 'Hamshahri' news datas
 In this project informative words are extracted from train data by using Information Gain formula.
 Two NBC classifiers based on unigram model and Bigram model are implemented. the unigram model has two 
 variations which in one of them just the informative words are used in classification.
-the dataset is also imported.
-
+The dataset is also imported.
