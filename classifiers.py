@@ -99,6 +99,8 @@ def getBigramProb(word_i2, word_i1, category_i):
 
     prob = 0
 
+    Beta = 0
+
     p_BG = probInCorpus(word_i2)
 
     if(word_i1 in corpus[category_i]):
@@ -111,12 +113,16 @@ def getBigramProb(word_i2, word_i1, category_i):
 
         prob = (max((bigram - sigma), 0) / total_count)
 
-        Beta = len(set(corpus[category_i][word_i1]))
+    for cat in corpus:
 
-        prob += ((sigma * Beta) / total_word_corpus) * p_BG
+        if(word_i1 in corpus[cat]):
 
-        if(prob>0):
-            prob = math.log(prob, 10)
+            Beta += len(set(corpus[cat][word_i1]))
+
+    prob += ((sigma * Beta) / total_word_corpus) * p_BG
+
+    if(prob>0):
+        prob = math.log(prob, 10)
 
 
     return prob
